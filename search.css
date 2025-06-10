@@ -1,0 +1,161 @@
+/* search.css */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.4;
+}
+
+.navbar {
+  /* position: fixed;        */
+  top: 0;             
+  left: 0;
+  width: 100%;          
+  z-index: 1000;      
+  background-color: #fff; 
+  /* padding: 10px 40px; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.ytblogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ytblogo img {
+  width: 50px;
+  height: 50px;
+}
+
+.ytblogo h2 {
+  font-size: 24px;
+  color: #000;
+}
+
+.search-bar {
+    align-items: center;
+    border: 1px solid;
+    border-color: #c6c6c6;
+    /* border-right: 0; */
+    border-radius: 40px 0 0 40px;
+    /* margin-left: 32px; */
+    padding: 0 4px 0 16px;
+    display: flex
+;
+
+}
+.search-bar input{
+    padding: 1px 0;
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
+#hrefs {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #FF0000;
+}
+
+
+
+.main {
+  max-width: 1200px;
+  margin: 5rem auto 2rem; /* space below fixed header */
+  padding: 0 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.video-card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.video-card:hover {
+  box-shadow: 0 6px 15px rgba(204, 0, 0, 0.3);
+}
+
+.video-card img {
+  width: 100%;
+  display: block;
+}
+
+.video-info {
+  padding: 0.5rem 1rem 1rem;
+}
+
+.video-info h4 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.video-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .search-bar button {
+    padding: 0 0.75rem;
+  }
+}
