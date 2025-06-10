@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAg-aa7P5fMeYcrM2q4waJF_Rxt8f-VL4c";
+const API_KEY = "";
 const videoContainer = document.getElementById("videos");
 const searchInput = document.getElementById("searchinput");
 const searchBtn = document.getElementById("searchbtn");
