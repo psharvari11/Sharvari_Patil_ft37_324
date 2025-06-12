@@ -4,7 +4,7 @@ function debounce(fn, delay) {
   let timer;
   return function () {
     clearTimeout(timer) //Cancel the previous timeout if a new event comes in within the delay
-    setTimeout(() => {
+    timer =setTimeout(() => {
       fn();
     }, delay);
   };
